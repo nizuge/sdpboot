@@ -1,0 +1,32 @@
+server:
+  port: 9999
+sdk:
+  #host_ip: 192.168.10.106
+  host_ip: 192.168.10.132
+  port: 8000
+  token: GxSW-JKSD
+  #token: FK9C-iA3c
+  version: v0
+  api:
+    identify:
+      threshold: 0.7
+data:
+  threshold: 30
+  draw: 20
+  thread: 3
+  storage: /data/images
+
+identify:
+  type: biggest
+  size: 100
+
+door:
+#  switch_address: http://192.168.10.212:8899/switch/on_off_ex
+  switch_address: http://192.168.10.132:8899/switch/on_off_ex
+  type: 3
+camera:
+  resolution:
+    width: 1280
+    height: 720
+
+
